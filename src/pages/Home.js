@@ -1,4 +1,5 @@
 import MiniReact from 'mini-react';
+import Navbar from '../components/Navbar'; 
 
 class Home extends MiniReact.Component {
   render() {
@@ -9,6 +10,7 @@ class Home extends MiniReact.Component {
         className: 'home'
       },
       children: [
+        MiniReact.CreateElement({ componentClass: Navbar }), 
         MiniReact.CreateElement({
           tagName: 'h1',
           props: {
@@ -22,6 +24,7 @@ class Home extends MiniReact.Component {
             textContent: 'Ceci est la page d\'accueil de notre application.'
           }
         }),
+       
 
       ]
     });
