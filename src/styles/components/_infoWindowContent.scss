@@ -1,0 +1,90 @@
+.info-window-content {
+    .info-window-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .info-window-body {
+      .info-window-images {
+        .info-window-image {
+          width: 100%;
+          border-radius: 5px;
+          margin-top: 0.5rem;
+        }
+      }
+  
+      .info-window-details {
+        margin-top: 0.5rem;
+  
+        .info-window-disciplines, .info-window-description {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .info-window-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        margin-bottom: 1rem;
+    
+        &::-webkit-scrollbar {
+          display: none; /* Chrome, Safari, Opera*/
+        }
+    
+        .info-window-image-container {
+          flex: none;
+          scroll-snap-align: start;
+          margin-right: 0.5rem;
+          width: 200px; /* Adjust as needed */
+          height: auto;
+    
+          .info-window-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .info-window-button-container {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .info-window-disciplines {
+        .disciplines{
+            background-color: #e1e1e1;
+            color: #333;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 2px;
+            font-size: 0.8rem;
+            display: inline-block; 
+        }
+       
+      }
+    
+  
+      .info-window-button {
+        display: block;
+        min-width: 200px;
+        padding: 0.5rem 1rem;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+  
+        &:hover {
+          background-color: darken(#3498db, 10%);
+        }
+      }
+    }
+  }
+  

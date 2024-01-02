@@ -1,0 +1,132 @@
+.olympic-event-dashboard {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+  }
+
+
+  .no-results-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px; 
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: #555;
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #eaeaea;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .filters-and-spots {
+    flex-basis: 40%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    height: 100vh;
+
+    .filters {
+      background: white;
+      position: sticky;
+      margin-bottom: 15px;
+      top: 0;
+      z-index: 10;
+
+      .search-bar-container {
+        margin-bottom: 10px;
+      }
+
+      .other-filters {
+        display: flex;
+        justify-content: space-between;
+
+        > div {
+          flex-basis: calc(50% - 5px);
+        }
+      }
+    }
+
+    .proximity-message {
+      font-size: 1rem;
+      color: #666;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #f3f3f3;
+      border-radius: 5px;
+      margin: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .spots-list {
+      flex-grow: 1;
+      overflow-y: auto; 
+      scrollbar-width: thin; 
+      -ms-overflow-style: auto; 
+
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: darken(#f3f3f3, 20%);
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .map-container {
+    flex-grow: 1;
+    overflow: hidden;
+
+    #mapId {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
