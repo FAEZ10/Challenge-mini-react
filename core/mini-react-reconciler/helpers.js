@@ -4,13 +4,13 @@ const instantiate = fiber => {
   return instance;
 };
 
-const findRoot = fiber => {
+const findRoot = function findRoot(fiber) {
   let node = fiber;
-
-  while (node.parent) {
+  while (node && node.parent) {
     node = node.parent;
   }
   return node;
 };
+
 
 export { instantiate, findRoot };

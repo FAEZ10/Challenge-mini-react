@@ -11,12 +11,13 @@ export default class Component {
     this.componentWillUnmount = this.componentWillUnmount || (() => {});
   }
 
-  setState(state) {
+  setState(state, callback) {
     const newState = typeof state === 'function' ? state(this.state) : state;
     const message = {
       from: CLASS,
       instance: this,
-      partialState: newState
+      partialState: newState,
+      callback: callback 
     };
     addMessage(message);
   }
