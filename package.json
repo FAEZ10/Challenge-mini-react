@@ -1,6 +1,7 @@
 {
   "name": "mini-react",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "./src/index.js",
   "babel": {
@@ -20,22 +21,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.23.6",
-    "@babel/preset-env": "^7.23.6 ",
-    "@rollup/plugin-json": "^6.1.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.13.0",
-    "jest": "^24.8.0",
-    "rollup": "^1.15.5",
-    "rollup-plugin-alias": "^1.5.2",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-eslint": "^7.0.0",
-    "rollup-plugin-force-binding": "^1.0.6",
-    "rollup-plugin-includepaths": "^0.2.4",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-sass": "^1.12.21",
-    "rollup-plugin-serve": "^1.1.1"
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@rollup/plugin-json": "latest",
+    "@rollup/plugin-node-resolve": "latest",
+    "@rollup/plugin-babel": "latest",
+    "@rollup/plugin-alias": "latest",
+    "eslint": "latest",
+    "eslint-plugin-react": "latest",
+    "jest": "latest",
+    "rollup": "latest",
+    "rollup-plugin-livereload": "latest",
+    "rollup-plugin-sass": "latest",
+    "rollup-plugin-serve": "latest"
   }
 }

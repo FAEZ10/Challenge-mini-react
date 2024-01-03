@@ -1,23 +1,28 @@
-import resolve from '@rollup/plugin-node-resolve'; 
+import { fileURLToPath } from 'url';
+import { dirname, resolve as resolvePath } from 'path';
+import resolvePlugin from '@rollup/plugin-node-resolve'; 
 import alias from '@rollup/plugin-alias';         
 import babel from '@rollup/plugin-babel';         
 import sass from 'rollup-plugin-sass';
-
 import livereload from 'rollup-plugin-livereload';
 import serve from 'rollup-plugin-serve';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const sassOptions = {
   output: true
 };
 
 const aliasOptions = {
-  'mini-react-dom': __dirname + '/core/mini-react-dom/index.js',
-  'mini-react': __dirname + '/core/mini-react/index.js',
-  'mini-react-reconciler': __dirname + '/core/mini-react-reconciler/index.js',
-  shared: __dirname + '/core/shared/index.js',
-  'mini-react-router': __dirname + '/src/components/router/index.js',
+  entries: [
+    { find: 'mini-react-dom', replacement: resolvePath(__dirname, 'core/mini-react-dom/index.js') },
+    { find: 'mini-react', replacement: resolvePath(__dirname, 'core/mini-react/index.js') },
+    { find: 'mini-react-reconciler', replacement: resolvePath(__dirname, 'core/mini-react-reconciler/index.js') },
+    { find: 'shared', replacement: resolvePath(__dirname, 'core/shared/index.js') },
+    { find: 'mini-react-router', replacement: resolvePath(__dirname, 'src/components/router/index.js') },
+  ]
 };
-
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -27,7 +32,7 @@ const plugins = [
     babelHelpers: 'bundled'
   }),
   sass(sassOptions),
-  resolve(),
+  resolvePlugin({ browser: true }), 
   alias(aliasOptions),
   isDev && serve({
     open: true,
@@ -36,12 +41,12 @@ const plugins = [
     port: 3008,
   }),
   isDev && livereload('./src'),
-].filter(Boolean); 
+].filter(Boolean);
 
 export default {
   input: 'src/index.js',
   output: {
-    file: __dirname + '/build/bundle.min.js',
+    file: resolvePath(__dirname, 'build/bundle.min.js'),
     format: 'cjs'
   },
   plugins
