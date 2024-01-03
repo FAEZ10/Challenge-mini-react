@@ -72,7 +72,7 @@ class MapContainer extends Component {
   
   loadGoogleMapsScript() {
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDztaMSHnohf0QVkCMsVfAvQYzKMnWGd5g&callback=initMap`;;
     script.async = true;
     document.head.appendChild(script);
   }
