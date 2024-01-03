@@ -6,7 +6,7 @@ class Navbar extends Component {
     return CreateElement({
       tagName: 'header',
       props: {
-        className: 'Navbar'
+        className: ' header navbar'
       },
       children: [
             CreateElement({
