@@ -1,0 +1,44 @@
+#section1 .container div.countdown{
+   
+    z-index: 1;
+    background-color: aliceblue;
+    color: black;
+    margin: auto;
+    border-radius: 80px;
+    width: 500px ;
+    height:4rem ;
+    margin-bottom: -4rem;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);;
+    display: flex; 
+}
+
+#section1 .container div.countdown .countdown__item{
+    display: flex;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    flex-basis: 40%;
+}
+
+#section1 .container div.countdown .countdown__jours,
+#section1 .container div.countdown .countdown__heures,
+#section1 .container div.countdown .countdown__minutes,
+#section1 .container div.countdown .countdown__secondes
+
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 1rem;
+    
+}
+#section1 .container div.countdown .countdown__jours p,
+#section1 .container div.countdown .countdown__heures p,
+#section1 .container div.countdown .countdown__minutes p,
+#section1 .container div.countdown .countdown__secondes p
+{
+    margin-top: -1rem;
+    font-size: 0.5rem;
+
+}
