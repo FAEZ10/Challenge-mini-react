@@ -1,10 +1,10 @@
-/* eslint-disable no-undef */
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve'; 
+import alias from '@rollup/plugin-alias';         
+import babel from '@rollup/plugin-babel';         
+import sass from 'rollup-plugin-sass';
+
 import livereload from 'rollup-plugin-livereload';
 import serve from 'rollup-plugin-serve';
-import alias from 'rollup-plugin-alias';
-import babel from 'rollup-plugin-babel';
-import sass from 'rollup-plugin-sass';
 
 const sassOptions = {
   output: true
@@ -18,29 +18,31 @@ const aliasOptions = {
   'mini-react-router': __dirname + '/src/components/router/index.js',
 };
 
+
+const isDev = process.env.NODE_ENV === 'development';
+
 const plugins = [
   babel({
     exclude: 'node_modules/**',
+    babelHelpers: 'bundled'
   }),
   sass(sassOptions),
   resolve(),
-  serve({
+  alias(aliasOptions),
+  isDev && serve({
     open: true,
-    contentBase: ['./public', './build'], 
-    historyApiFallback: true, 
-    port: 3008, 
+    contentBase: ['./public', './build'],
+    historyApiFallback: true,
+    port: 3008,
   }),
-  livereload('./src'), 
-  alias(aliasOptions)
-];
+  isDev && livereload('./src'),
+].filter(Boolean); 
 
-export default [
-  {
-    input: 'src/index.js',
-    output: {
-      file: __dirname + '/build/bundle.min.js',
-      format: 'cjs'
-    },
-    plugins
-  }
-];
+export default {
+  input: 'src/index.js',
+  output: {
+    file: __dirname + '/build/bundle.min.js',
+    format: 'cjs'
+  },
+  plugins
+};
