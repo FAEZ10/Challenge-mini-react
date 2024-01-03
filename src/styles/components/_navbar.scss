@@ -2,25 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2d2f33; // Couleur de fond
+  background-color: #2d2f33; 
   padding: 10px 20px;
 
   .navbar-logo {
-    height: 50px; // Ajustez selon vos besoins
+    height: 50px; 
   }
 
   .nav-links {
     display: flex;
+    align-content: center;
+    justify-content: center;
     align-items: center;
 
     .nav-link {
       margin-left: 20px;
       text-decoration: none;
-      color: #ffffff; // Couleur des liens
+      color: #ffffff; 
       font-size: 16px;
 
       &:hover {
-        color: #4caf50; // Couleur au survol
+        color: #4caf50; 
       }
     }
   }

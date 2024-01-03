@@ -1,0 +1,40 @@
+
+ footer{
+	padding: 0.5rem 0;
+	background-color: black;
+	color: white;
+	font-size: 80%;
+}
+
+ footer .container{
+	display: flex;
+	justify-content: space-between;
+	
+
+}
+
+footer .container nav{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+
+ footer ul{
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	flex-basis: 80%;
+}
+
+footer ul li{
+	
+	margin-left: 1rem;
+}
+
+footer ul li a{
+	color: white;
+	text-decoration: none;
+}
+

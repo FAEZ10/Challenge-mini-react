@@ -5,9 +5,10 @@ import serve from 'rollup-plugin-serve';
 import alias from 'rollup-plugin-alias';
 import babel from 'rollup-plugin-babel';
 import sass from 'rollup-plugin-sass';
+import json from '@rollup/plugin-json';
 
 const sassOptions = {
-  output: true
+  output: true,
 };
 
 const aliasOptions = {
@@ -31,7 +32,8 @@ const plugins = [
     port: 3008, 
   }),
   livereload('./src'), 
-  alias(aliasOptions)
+  alias(aliasOptions),
+  json(),
 ];
 
 export default [
@@ -43,4 +45,5 @@ export default [
     },
     plugins
   }
+  
 ];
