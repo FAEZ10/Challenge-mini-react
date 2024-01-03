@@ -51,7 +51,6 @@ class ExplorerEvent extends Component {
               lat: position.coords.latitude,
               lng: position.coords.longitude,
             },
-            loading: false,
           }));
         },
         (error) => {
@@ -59,14 +58,12 @@ class ExplorerEvent extends Component {
             "Erreur lors de l'obtention de la géolocalisation :",
             error
           );
-          this.setState(() => ({ loading: false }));
         }
       );
     } else {
       console.error(
         "La géolocalisation n'est pas prise en charge par ce navigateur."
       );
-      this.setState(() => ({ loading: false }));
     }
   }
 
@@ -138,7 +135,6 @@ class ExplorerEvent extends Component {
         )
     );
   }
-
 
   getSpotsFromLocations(filteredLocations) {
     if (!filteredLocations) return [];
@@ -258,12 +254,8 @@ class ExplorerEvent extends Component {
             const name = discipline.name;
             const dateEvents = discipline.events
               .map((event) => {
-                const date = new Date(event.date);
-                const day = date.getDate();
-                const month = date.getMonth() + 1;
-                const year = date.getFullYear();
-
-                return `${day}/${month}/${year}`;
+                const formatedDate = new Date(event.date).toLocaleDateString( 'fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+                return formatedDate;
               })
               .join(", ");
             return { name, dateEvents };
@@ -305,7 +297,7 @@ class ExplorerEvent extends Component {
     const filtersAndSpots = CreateElement({
       tagName: "div",
       props: { className: "filters-and-spots" },
-      children: [filterSection, spotsList],
+      children: [ filterSection, spotsList],
     });
 
     const mapSection = CreateElement({
@@ -325,7 +317,7 @@ class ExplorerEvent extends Component {
 
     return CreateElement({
       tagName: "div",
-      props: { className: "olympic-event-dashboard" },
+      props: { className: "explorer-events" },
       children: [filtersAndSpots, mapSection, modal],
     });
   }
