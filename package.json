@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "rollup -c -w",
+    "build": "rollup -c",
     "tests": "jest",
     "lint": "npx eslint core/**/**.js src/**/**.js"
   },
