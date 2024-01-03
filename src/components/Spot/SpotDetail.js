@@ -5,7 +5,7 @@ import '../../styles/components/_spotDetail.scss';
 class SpotDetail extends Component {
 
   openDirections = (userLocation, location) => {
-    const travelMode = 'DRIVING'; // Vous pouvez changer cela en fonction du mode de déplacement souhaité
+    const travelMode = 'DRIVING'; 
     const directionUrl = `https://www.google.com/maps/dir/?api=1&origin=${userLocation.lat},${userLocation.lng}&destination=${location.lat},${location.lng}&travelmode=${travelMode}`;
     window.open(directionUrl, '_blank');
   }
@@ -21,8 +21,9 @@ class SpotDetail extends Component {
     }));
   }
 
-  renderSessions(sessions) {
+  renderSessions(sessions, date) {
     if (!sessions) return null;
+    const formatedDate = date ? new Date(date).toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }) : null;
 
     return sessions.map(session => CreateElement({
       tagName: 'div',
@@ -31,7 +32,7 @@ class SpotDetail extends Component {
         CreateElement({
           tagName: 'h4',
           props: {
-            textContent: `${session.startTime} - ${session.endTime}`,
+            textContent: `${formatedDate} ${session.startTime} - ${session.endTime}`,
             className: 'session-time'
           }
         }),
@@ -56,7 +57,7 @@ class SpotDetail extends Component {
         CreateElement({
           tagName: 'div',
           props: { className: 'session-container' },
-          children: this.renderSessions(event.sessions)
+          children: this.renderSessions(event.sessions, event.date)
         })
       ]
     }));
@@ -112,7 +113,6 @@ class SpotDetail extends Component {
       })
     ];
   
-    // Créez le conteneur du carrousel, qui inclura les éléments d'image ci-dessus.
     const imageCarousel = CreateElement({
       tagName: 'div',
       props: { className: 'carousel' },

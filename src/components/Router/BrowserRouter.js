@@ -28,8 +28,8 @@ class BrowserRouter extends Component {
     const matchingRoute = this.props.routes.find(route => route.path === newPath);
 
     if (!matchingRoute) {
-      window.history.pushState({}, '', '/');
-      this.setState({ currentPath: '/' });
+      window.history.pushState({}, '', '/not-found');
+      this.setState({ currentPath: '/not-found' });
     } else {
       const prevInstance = this.state.componentInstances[this.state.currentPath];
       if (prevInstance && prevInstance.componentWillUnmount) {
@@ -45,7 +45,7 @@ class BrowserRouter extends Component {
 
   render() {
     const { currentPath, componentInstances } = this.state;
-    const componentInstance = componentInstances[currentPath] || componentInstances['/'];
+    const componentInstance = componentInstances[currentPath] || componentInstances['/not-found'];
     return CreateElement({ componentClass: componentInstance.constructor, props: { ...componentInstance.props } });
   }
 }

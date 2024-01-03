@@ -1,4 +1,4 @@
-.olympic-event-dashboard {
+.explorer-events {
   display: flex;
   height: 100vh;
   overflow: hidden;
@@ -14,16 +14,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; 
+    z-index: 9999;
   }
-
 
   .no-results-message {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 200px; 
+    height: 200px;
     margin: 2rem 0;
     font-size: 1.5rem;
     color: #555;
@@ -67,7 +66,7 @@
   .filters-and-spots {
     flex-basis: 40%;
     display: flex;
-    padding: 20px;
+    padding: 10px;
     flex-direction: column;
     height: 100vh;
 
@@ -75,6 +74,7 @@
       background: white;
       position: sticky;
       margin-bottom: 15px;
+      margin-right: 10px;
       top: 0;
       z-index: 10;
 
@@ -105,9 +105,9 @@
 
     .spots-list {
       flex-grow: 1;
-      overflow-y: auto; 
-      scrollbar-width: thin; 
-      -ms-overflow-style: auto; 
+      overflow-y: auto;
+      scrollbar-width: thin;
+      -ms-overflow-style: auto;
 
       &::-webkit-scrollbar {
         width: 10px;

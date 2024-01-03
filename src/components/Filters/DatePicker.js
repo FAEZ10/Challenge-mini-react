@@ -13,7 +13,6 @@ class DatePicker extends Component {
     const selectedDate = event.target.value;
     this.setState({ selectedDate });
 
-    // Lorsque la date change, si une fonction de rappel est fournie via les props, appelez-la.
     if (this.props.onDateChange) {
       this.props.onDateChange(selectedDate);
     }

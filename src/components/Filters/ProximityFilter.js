@@ -1,6 +1,6 @@
 import MiniReact from 'mini-react';
 import Select from '../Form/Select.js';
-import '../../styles/components/_proximityFilter.scss';
+import '../../styles/components/_selectFilter.scss';
 
 class ProximityFilter extends MiniReact.Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class ProximityFilter extends MiniReact.Component {
         options: distanceOptions,
         onInput: this.handleDistanceChange,
         value: this.state.selectedDistance,
-        className: 'proximity-filter'
+        className: 'select-filter'
       }
     });
   }

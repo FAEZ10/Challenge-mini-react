@@ -11,6 +11,17 @@
   max-height: 80vh;
   overflow-y: auto;
   z-index: 1000;
+  scrollbar-width: thin; 
+      -ms-overflow-style: auto; 
+
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: darken(#f3f3f3, 20%);
+        border-radius: 10px;
+      }
 
   @media (max-width: 600px) {
     width: 90%;
@@ -47,8 +58,8 @@
         content: "";
         background-image: url("./images/components/distance1.svg");
         background-size: cover;
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
         margin-right: 5px;
       }
     }
