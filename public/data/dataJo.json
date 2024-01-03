@@ -22,10 +22,8 @@
                         "lng": 2.3604
                     },
                     "images": [
-                        "./images/stade_de_france/stf_1.jpg",
-                        "./images/stade_de_france/stf_2.jpg",
                         "./images/stade_de_france/stf_3.jpg",
-                        "./images/stade_de_france/stf_4.jpg"
+                        "image_url_2"
                     ],
                     "disciplines": ["Athlétisme", "Football", "Rugby"]
                 }

@@ -1,14 +1,14 @@
-// Couleurs de base
-$primary-color: #0055a4;   // Bleu, pour les éléments principaux
-$secondary-color: #ffcc00; // Jaune, pour les accents et les highlights
-$tertiary-color: #e63946;  // Rouge, pour les alertes ou les actions importantes
 
-// Typographie
-$font-family-base: 'Roboto', sans-serif; // Typographie principale
-$font-size-base: 16px; // Taille de base pour le texte
-$heading-font-family: 'Montserrat', sans-serif; // Typographie pour les titres
+$primary-color: #0055a4;   
+$secondary-color: #ffcc00; 
+$tertiary-color: #e63946;  
 
-// Mixins
+
+$font-family-base: 'Roboto', sans-serif; 
+$font-size-base: 16px; 
+$heading-font-family: 'Montserrat', sans-serif; 
+
+
 @mixin center-flex {
   display: flex;
   justify-content: center;
@@ -23,11 +23,11 @@ $heading-font-family: 'Montserrat', sans-serif; // Typographie pour les titres
   box-shadow: $x $y $blur $color;
 }
 
-// Autres paramètres utiles
+
 $container-width: 1200px;
 $gutter-width: 15px;
 
-// Responsive breakpoints
+
 $breakpoints: (
   'sm': 576px,
   'md': 768px,
@@ -35,12 +35,12 @@ $breakpoints: (
   'xl': 1200px
 );
 
-// Fonction pour obtenir les valeurs des breakpoints
+
 @function breakpoint($name) {
   @return map-get($breakpoints, $name);
 }
 
-// Exemple d'utilisation d'un mixin pour le responsive
+
 @mixin respond-to($breakpoint) {
   @media (min-width: breakpoint($breakpoint)) {
     @content;
