@@ -85,7 +85,7 @@ header {
   line-height: 0;
 }
 .Navbar img {
-  width: 70px;
+  width: 40px;
   height: auto;
   fill: white;
   transition: all 0.5s;
@@ -106,7 +106,7 @@ header {
   padding: 0.5em;
   display: block;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 main {
@@ -440,7 +440,7 @@ header {
   line-height: 0;
 }
 .Navbar img {
-  width: 70px;
+  width: 40px;
   height: auto;
   fill: white;
   transition: all 0.5s;
@@ -461,5 +461,5 @@ header {
   padding: 0.5em;
   display: block;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
 }

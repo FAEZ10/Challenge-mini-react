@@ -1,0 +1,1811 @@
+{
+    "locations": [
+        {
+            "name": "Stade de France",
+            "description": "Le Stade de France est le plus grand stade français avec 80 698 places en configuration football/rugby. Il est situé dans le quartier de la Plaine Saint-Denis à Saint-Denis, dans la banlieue nord de Paris. Il doit son nom à sa localisation dans la commune de Saint-Denis, au nord de Paris, et à sa proximité avec la basilique Saint-Denis, lieu de sépulture des rois de France.",
+            "location": {
+                "lat": 48.924459,
+                "lng": 2.360165
+            },
+            "images": [
+                "./images/stade_de_france/stf_1.jpg",
+                "./images/stade_de_france/stf_2.jpg",
+                "./images/stade_de_france/stf_3.jpg",
+                "./images/stade_de_france/stf_4.jpg"
+            ],
+            "spots": [
+                {
+                    "name": "Tribune virage nord",
+                    "description": "Meilleure vue sur le terrain pour les matchs de football, mais moins bonne vue pour les matchs de rugby, pour trouver les meilleures places faut aller un peu tôt.",
+                    "location": {
+                        "lat": 48.9245,
+                        "lng": 2.3604
+                    },
+                    "images": [
+                        "./images/stade_de_france/stf_3.jpg",
+                        "image_url_2"
+                    ],
+                    "disciplines": ["Athlétisme", "Football", "Rugby"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "Athlétisme",
+                    "events": [
+                        {
+                            "date": "2024-08-02",
+                            "sessions": [
+                                {
+                                    "startTime": "10:00",
+                                    "endTime": "13:00",
+                                    "activities": [
+                                        "Décathlon - 100 m, hommes",
+                                        "Lancer de marteau - hommes, qualifications",
+                                        "Saut en hauteur - femmes, qualifications",
+                                        "100 m - femmes, tour préliminaire",
+                                        "Décathlon - saut en longueur, hommes",
+                                        "1 500 m - hommes, 1er tour",
+                                        "100 m - femmes, 1er tour",
+                                        "Décathlon - lancer de poids, hommes"
+                                    ]
+                                },
+                                {
+                                    "startTime": "17:40",
+                                    "endTime": "22:00",
+                                    "activities": [
+                                        "Décathlon - saut en hauteur, hommes",
+                                        "5 000 m - femmes, 1er tour",
+                                        "Triple saut - femmes, qualifications",
+                                        "Lancer de disque - femmes, qualifications",
+                                        "Relais 4 x 400 m - mixte, 1er tour",
+                                        "800 m - femmes, 1er tour",
+                                        "Lancer de poids - hommes, qualifications",
+                                        "Décathlon - 400 m, hommes",
+                                        "10 000 m - hommes, finale"
+                                    ]
+                                },
+                                {
+                                    "startTime": "10:00",
+                                    "endTime": "16:00",
+                                    "activities": [
+                                        "Décathlon - 110 m haies, hommes",
+                                        "Saut à la perche - hommes, qualifications",
+                                        "100 m - hommes, tour préliminaire",
+                                        "Décathlon - lancer de disque, hommes",
+                                        "800 m - femmes, Repêchages",
+                                        "100 m - hommes, 1er tour",
+                                        "Décathlon - saut à la perche, hommes"
+                                    ]
+                                },
+                                {
+                                    "startTime": "19:00",
+                                    "endTime": "22:00",
+                                    "activities": [
+                                        "1 500 m - hommes, Repêchages",
+                                        "Lancer de poids - hommes, finale",
+                                        "100 m - femmes, demi-finales",
+                                        "Triple saut - femmes, finale",
+                                        "Relais 4 x 400 m - mixte, finale",
+                                        "100 m - femmes, finale",
+                                        "Décathlon - 1 500 m, hommes"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-08-03",
+                            "sessions": [
+                                {
+                                    "startTime": "10:00",
+                                    "endTime": "13:00",
+                                    "activities": [
+                                        "Décathlon - 110 m haies, hommes",
+                                        "Saut à la perche - hommes, qualifications",
+                                        "100 m - hommes, tour préliminaire",
+                                        "Décathlon - lancer de disque, hommes",
+                                        "800 m - femmes, Repêchages",
+                                        "100 m - hommes, 1er tour",
+                                        "Décathlon - saut à la perche, hommes"
+                                    ]
+                                },
+                                {
+                                    "startTime": "19:00",
+                                    "endTime": "22:00",
+                                    "activities": [
+                                        "1 500 m - hommes, Repêchages",
+                                        "Lancer de poids - hommes, finale",
+                                        "100 m - femmes, demi-finales",
+                                        "Triple saut - femmes, finale",
+                                        "Relais 4 x 400 m - mixte, finale",
+                                        "100 m - femmes, finale",
+                                        "Décathlon - 1 500 m, hommes"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-08-04",
+                            "sessions": [
+                                {
+                                    "startTime": "10:00",
+                                    "endTime": "13:00",
+                                    "activities": [
+                                        "Décathlon - 110 m haies, hommes",
+                                        "Saut à la perche - hommes, qualifications",
+                                        "100 m - hommes, tour préliminaire",
+                                        "Décathlon - lancer de disque, hommes",
+                                        "800 m - femmes, Repêchages",
+                                        "100 m - hommes, 1er tour",
+                                        "Décathlon - saut à la perche, hommes"
+                                    ]
+                                },
+                                {
+                                    "startTime": "19:00",
+                                    "endTime": "22:00",
+                                    "activities": [
+                                        "1 500 m - hommes, Repêchages",
+                                        "Lancer de poids - hommes, finale",
+                                        "100 m - femmes, demi-finales",
+                                        "Triple saut - femmes, finale",
+                                        "Relais 4 x 400 m - mixte, finale",
+                                        "100 m - femmes, finale",
+                                        "Décathlon - 1 500 m, hommes"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-08-05",
+                            "sessions": [
+                                {
+                                    "startTime": "10:00",
+                                    "endTime": "13:00",
+                                    "activities": [
+                                        "Décathlon - 110 m haies, hommes",
+                                        "Saut à la perche - hommes, qualifications",
+                                        "100 m - hommes, tour préliminaire",
+                                        "Décathlon - lancer de disque, hommes",
+                                        "800 m - femmes, Repêchages",
+                                        "100 m - hommes, 1er tour",
+                                        "Décathlon - saut à la perche, hommes"
+                                    ]
+                                },
+                                {
+                                    "startTime": "19:00",
+                                    "endTime": "22:00",
+                                    "activities": [
+                                        "1 500 m - hommes, Repêchages",
+                                        "Lancer de poids - hommes, finale",
+                                        "100 m - femmes, demi-finales",
+                                        "Triple saut - femmes, finale",
+                                        "Relais 4 x 400 m - mixte, finale",
+                                        "100 m - femmes, finale"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Trocadéro",
+            "description": "Le Trocadéro est un quartier du 16e arrondissement de Paris, en France. Il est situé sur la colline de Chaillot, au bord de la Seine et fait face à la tour Eiffel. Il est desservi par les stations de métro Trocadéro et Passy.",
+            "location": {
+                "lat": 48.8625,
+                "lng": 2.2886
+            },
+            "images": [
+                "./images/trocadero/troc_1.jpg",
+                "./images/trocadero/troc_2.jpg",
+                "./images/trocadero/troc_3.jpg",
+                "./images/trocadero/troc_4.jpg"
+            ],
+            "spots": [
+                {
+                    "name": "Spot 2",
+                    "description": "Description du spot 2",
+                    "location": {
+                        "lat": 48.862983,
+                        "lng": 2.288215
+                    },
+                    "images": [
+                        "image_url_3",
+                        "image_url_4"
+                    ],
+                    "disciplines": ["Athlétisme"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "Athlétisme",
+                    "events": [
+                        {
+                            "date": "2024-08-01",
+                            "sessions": [
+                                {
+                                    "startTime": "07:30",
+                                    "endTime": "11:05",
+                                    "activities": [
+                                        "20 km marche - hommes finale",
+                                        "20 km marche - femmes finale"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arena Porte de La Chapelle",
+              "description": "L'Arena Porte de la Chapelle est une salle omnisports située dans le 18e arrondissement de Paris, en France. Elle est située dans le quartier de la Chapelle, à proximité de la porte de la Chapelle, d'où elle tire son nom. Elle est desservie par la station de métro Porte de la Chapelle.",
+            "location": {
+                "lat": 48.8978,
+                "lng": 2.3602
+            },
+            "images": [
+                "image_url_badminton_1",
+                "image_url_badminton_2"
+            ],
+            "spots": [
+                {
+                    "name": "Spot 3",
+                    "description": "Description du spot 3",
+                    "location": {
+                        "lat": 48.8978,
+                        "lng": 2.3602
+                    },
+                    "images": [
+                        "image_url_5",
+                        "image_url_6"
+                    ],
+                    "disciplines": ["Badminton"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "Badminton",
+                    "events": [
+                        {
+                            "date": "2024-07-27",
+                            "sessions": [
+                                {
+                                    "startTime": "08:30",
+                                    "endTime": "12:00",
+                                    "activities": [
+                                        "Double mixte poules préliminaires",
+                                        "Simple femmes poules préliminaires",
+                                        "Double hommes poules préliminaires",
+                                        "Double femmes poules préliminaires",
+                                        "Simple hommes poules préliminaires"
+                                    ]
+                                },
+                                {
+                                    "startTime": "14:00",
+                                    "endTime": "17:30",
+                                    "activities": [
+                                        "Double mixte poules préliminaires",
+                                        "Simple femmes poules préliminaires",
+                                        "Double hommes poules préliminaires",
+                                        "Double femmes poules préliminaires",
+                                        "Simple hommes poules préliminaires"
+                                    ]
+                                },
+                                {
+                                    "startTime": "19:30",
+                                    "endTime": "23:00",
+                                    "activities": [
+                                        "Simple femmes poules préliminaires",
+                                        "Double hommes poules préliminaires",
+                                        "Double femmes poules préliminaires",
+                                        "Simple hommes poules préliminaires",
+                                        "Double mixte poules préliminaires"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-28",
+                            "sessions": [
+                                {
+                                    "startTime": "08:30",
+                                    "endTime": "12:00",
+                                    "activities": [
+                                        "Double mixte poules préliminaires",
+                                        "Simple femmes poules préliminaires",
+                                        "Double hommes poules préliminaires",
+                                        "Double femmes poules préliminaires",
+                                        "Simple hommes poules préliminaires"
+                                    ]
+                                },
+                                {
+                                    "startTime": "14:00",
+                                    "endTime": "17:30",
+                                    "activities": [
+                                        "Double mixte poules préliminaires",
+                                        "Simple femmes poules préliminaires",
+                                        "Double hommes poules préliminaires",
+                                        "Double femmes poules préliminaires",
+                                        "Simple hommes poules préliminaires"
+                                    ]
+                                },
+                                {
+                                    "startTime": "19:30",
+                                    "endTime": "23:00",
+                                    "activities": [
+                                        "Simple femmes poules préliminaires",
+                                        "Double hommes poules préliminaires",
+                                        "Double femmes poules préliminaires",
+                                        "Simple hommes poules préliminaires",
+                                        "Double mixte poules préliminaires"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stade nautique de Vaires-sur-Marne - Bassin eaux calmes",
+            "description": "Le stade nautique de Vaires-sur-Marne est un centre nautique situé à Vaires-sur-Marne, en France. Il est situé sur la commune de Vaires-sur-Marne, dans le département de Seine-et-Marne, à l'est de Paris.",
+            "location": {
+                "lat": 48.8374,
+                "lng": 2.6369
+            },
+            "images": [
+                "image_url_rowing_1",
+                "image_url_rowing_2"
+            ],
+            "spots": [
+                {
+                    "name": "Spot 3",
+                    "description": "Description du spot 3",
+                    "location": {
+                        "lat": 48.8374,
+                        "lng": 2.6369
+                    },
+                    "images": [
+                        "image_url_5",
+                        "image_url_6"
+                    ],
+                    "disciplines": ["Aviron"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "Aviron",
+                    "events": [
+                        {
+                            "date": "2024-07-27",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "13:10",
+                                    "activities": [
+                                        "Skiff - hommes éliminatoires",
+                                        "Skiff - femmes éliminatoires",
+                                        "Deux de couple - hommes éliminatoires",
+                                        "Deux de couple - femmes éliminatoires",
+                                        "Deux de pointe sans barreur - hommes éliminatoires",
+                                        "Deux de pointe sans barreur - femmes éliminatoires",
+                                        "Deux de pointe avec barreur - hommes éliminatoires",
+                                        "Deux de pointe avec barreur - femmes éliminatoires",
+                                        "Quatre de couple - hommes éliminatoires",
+                                        "Quatre de couple - femmes éliminatoires"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-28",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "13:10",
+                                    "activities": [
+                                        "Skiff - femmes repêchages",
+                                        "Skiff - hommes repêchages",
+                                        "Deux de couple - femmes repêchage",
+                                        "Deux de couple - hommes repêchage",
+                                        "Deux de pointe sans barreur - femmes repêchage",
+                                        "Deux de pointe sans barreur - hommes repêchage",
+                                        "Deux de pointe avec barreur - femmes repêchage",
+                                        "Deux de pointe avec barreur - hommes repêchage",
+                                        "Quatre de couple - hommes repêchage",
+                                        "Quatre de couple - femmes repêchage"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-29",
+                            "sessions": [
+                                {
+                                    "startTime": "09:30",
+                                    "endTime": "12:20",
+                                    "activities": [
+                                        "Skiff - hommes demi-finales E/F",
+                                        "Skiff - femmes demi-finales E/F",
+                                        "Deux de pointe sans barreur - hommes repêchage",
+                                        "Deux de pointe sans barreur - femmes repêchage",
+                                        "Deux de couple - hommes repêchage",
+                                        "Deux de couple - femmes repêchage",
+                                        "Quatre de couple - hommes repêchage",
+                                        "Quatre de couple - femmes repêchage"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-30",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:10",
+                                    "activities": [
+                                        "Skiff - hommes demi-finales C/D",
+                                        "Skiff - femmes demi-finales C/D",
+                                        "Deux de pointe sans barreur - femmes repêchage",
+                                        "Deux de pointe avec barreur - hommes demi-finales A/B",
+                                        "Deux de pointe avec barreur - femmes demi-finales A/B",
+                                        "Deux de couple - hommes repêchage",
+                                        "Deux de couple - femmes repêchage",
+                                        "Quatre de couple - hommes repêchage",
+                                        "Quatre de couple - femmes repêchage"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-31",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:10",
+                                    "activities": [
+                                        "Skiff - hommes demi-finales A/B",
+                                        "Skiff - femmes demi-finales A/B",
+                                        "Deux de pointe sans barreur - hommes demi-finales A/B",
+                                        "Deux de pointe sans barreur - femmes demi-finales A/B",
+                                        "Deux de pointe avec barreur - hommes repêchage",
+                                        "Deux de pointe avec barreur - femmes repêchage",
+                                        "Quatre de couple - hommes éliminatoires",
+                                        "Quatre de couple - femmes éliminatoires"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-08-01",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:10",
+                                    "activities": [
+                                        "Skiff - femmes demi-finales A/B",
+                                        "Skiff - hommes demi-finales A/B",
+                                        "Deux de pointe sans barreur - femmes demi-finales A/B",
+                                        "Deux de pointe avec barreur - hommes demi-finales A/B",
+                                        "Deux de pointe avec barreur - femmes demi-finales A/B",
+                                        "Deux de couple - hommes demi-finales A/B",
+                                        "Deux de couple - femmes demi-finales A/B"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-08-02",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:10",
+                                    "activities": [
+                                        "Skiff - hommes finales E/F",
+                                        "Skiff - femmes finales E/F",
+                                        "Deux de pointe sans barreur - hommes finales E/F",
+                                        "Deux de pointe sans barreur - femmes finales E/F",
+                                        "Deux de pointe avec barreur - hommes finales E/F",
+                                        "Deux de pointe avec barreur - femmes finales E/F",
+                                        "Deux de couple - hommes finales E/F",
+                                        "Deux de couple - femmes finales E/F"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-08-03",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:10",
+                                    "activities": [
+                                        "Skiff - hommes finales C/D",
+                                        "Skiff - femmes finales C/D",
+                                        "Deux de pointe sans barreur - femmes finales E/F",
+                                        "Deux de pointe avec barreur - hommes finales E/F",
+                                        "Deux de pointe avec barreur - femmes finales E/F",
+                                        "Deux de couple - hommes finales E/F",
+                                        "Deux de couple - femmes finales E/F"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arena Bercy",
+            "description": "L'Accor Arena, anciennement appelée Palais omnisports de Paris-Bercy, est une salle polyvalente située dans le quartier de Bercy, dans le 12e arrondissement de Paris, à proximité de la gare de Lyon. Elle est desservie par la station de métro Bercy.",
+            "location": {
+                "lat": 48.8397,
+                "lng": 2.3779
+            },
+            "images": [
+                "image_url_basketball_1",
+                "image_url_basketball_2"
+            ],
+            "spots": [
+                {
+                    "name": "Spot 3",
+                    "description": "Description du spot 3",
+                    "location": {
+                        "lat": 48.8397,
+                        "lng": 2.3779
+                    },
+                    "images": [
+                        "image_url_5",
+                        "image_url_6"
+                    ],
+                    "disciplines": ["Basketball"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "Basketball",
+                    "events": [
+                        {
+                            "date": "2024-07-27",
+                            "sessions": [
+                                {
+                                    "startTime": "11:00",
+                                    "endTime": "22:45",
+                                    "activities": [
+                                        "Hommes tour préliminaire (2 matchs)",
+                                        "Hommes tour préliminaire",
+                                        "Hommes tour préliminaire"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-28",
+                            "sessions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Centre aquatique de Marville",
+            "description": "Le centre aquatique de Marville est un centre aquatique situé à La Courneuve, en France. Il est situé sur la commune de La Courneuve, dans le département de Seine-Saint-Denis, au nord de Paris.",
+            "location": {
+                "lat": 48.9197,
+                "lng": 2.3542
+            },
+            "images": [
+                "./images/centre-aquatique/cta_1.jpg",
+                "./images/centre-aquatique/cta_2.jpg",
+                "./images/centre-aquatique/cta_3.jpg",
+                "./images/centre-aquatique/cta_4.jpg"
+            ],
+            "spots": [
+                {
+                    "name": "Spot 3",
+                    "description": "Description du spot 3",
+                    "location": {
+                        "lat": 48.9197,
+                        "lng": 2.3542
+                    },
+                    "images": [
+                        "image_url_5",
+                        "image_url_6"
+                    ],
+                    "disciplines": ["Natation"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "Plongeon",
+                    "events": [
+                        {
+                            "date": "2024-07-27",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:00",
+                                    "activities": [
+                                        "Plongeon 3 m synchronisé femmes finale"
+                                    ]
+                                },
+                                {
+                                    "startTime": "15:00",
+                                    "endTime": "18:00",
+                                    "activities": [
+                                        "Plongeon 10 m synchronisé hommes finale"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-28",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:00",
+                                    "activities": [
+                                        "Plongeon 3 m synchronisé hommes finale"
+                                    ]
+                                },
+                                {
+                                    "startTime": "15:00",
+                                    "endTime": "18:00",
+                                    "activities": [
+                                        "Plongeon 10 m synchronisé femmes finale"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-29",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:00",
+                                    "activities": [
+                                        "Plongeon 3 m femmes finale"
+                                    ]
+                                },
+                                {
+                                    "startTime": "15:00",
+                                    "endTime": "18:00",
+                                    "activities": [
+                                        "Plongeon 10 m hommes finale"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-30",
+                            "sessions": [
+                                {
+                                    "startTime": "09:00",
+                                    "endTime": "12:00",
+                                    "activities": [
+                                        "Plongeon 3 m hommes finale"
+                                    ]
+                                },
+                                {
+                                    "startTime": "15:00",
+                                    "endTime": "18:00",
+                                    "activities": [
+                                        "Plongeon 10 m femmes finale"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "La Concorde",
+            "description": "La place de la Concorde est une place de Paris située entre le jardin des Tuileries et l'avenue des Champs-Élysées, dans le 8e arrondissement. Elle est desservie par la station de métro Concorde.",
+            "location": {
+                "lat": 48.866667,
+                "lng": 2.321111
+            },
+            "images": [],
+            "spots": [
+                {
+                    "name": "Spot 3",
+                    "description": "Description du spot 3",
+                    "location": {
+                        "lat": 48.866667,
+                        "lng": 2.321111
+                    },
+                    "images": [
+                        "image_url_5",
+                        "image_url_6"
+                    ],
+                    "disciplines": ["BMX Freestyle"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "BMX Freestyle",
+                    "events": [
+                        {
+                            "date": "2024-07-30",
+                            "sessions": [
+                                {
+                                    "startTime": "13:25",
+                                    "endTime": "16:30",
+                                    "activities": [
+                                        "Park - Femme, qualification",
+                                        "Park - Homme, qualification"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2024-07-31",
+                            "sessions": [
+                                {
+                                    "startTime": "13:10",
+                                    "endTime": "16:30",
+                                    "activities": [
+                                        "Park - Femme, finale",
+                                        "Park - Homme, finale"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stade BMX de Saint-Quentin-en-Yvelines",
+            "description": "Le stade BMX de Saint-Quentin-en-Yvelines est un stade de BMX situé à Saint-Quentin-en-Yvelines, en France. Il est situé sur la commune de Saint-Quentin-en-Yvelines, dans le département de Yvelines, à l'ouest de Paris.",
+            "location": {
+                "lat": 48.77,
+                "lng": 1.99
+            },
+            "images": [],
+            "spots": [
+                {
+                    "name": "Spot 3",
+                    "description": "Description du spot 3",
+                    "location": {
+                        "lat": 48.77,
+                        "lng": 1.99
+                    },
+                    "images": [
+                        "image_url_5",
+                        "image_url_6"
+                    ],
+                    "disciplines": ["BMX Racing"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "BMX Racing",
+                    "events": []
+                }
+            ]
+        },
+        {
+            "name": "Place de la Breaking",
+            "location": {
+                "lat": 48.857,
+                "lng": 2.35
+            },
+            "images": [],
+            "spots": [
+                {
+                    "name": "Spot 3",
+                    "description": "Description du spot 3",
+                    "location": {
+                        "lat": 48.857,
+                        "lng": 2.35
+                    },
+                    "images": [
+                        "image_url_5",
+                        "image_url_6"
+                    ],
+                    "disciplines": ["Breaking"]
+                }
+            ],
+            "disciplines": [
+                {
+                    "name": "Breaking",
+                    "events": []
+                }
+            ]
+        },
+  
+        {
+          "name": "Stade Pierre Mauroy",
+          "description": "Le stade Pierre-Mauroy est un stade multifonction situé à Villeneuve-d'Ascq, dans la métropole européenne de Lille, en France. Il est situé sur la commune de Villeneuve-d'Ascq, dans le département du Nord, au nord de Lille.",
+          "location": {
+              "lat": 50.6108,
+              "lng": 3.1361
+          },
+          "images": [
+              "./images/stade_pierre_mauroy/spm_1.jpg",
+              "./images/stade_pierre_mauroy/spm_2.jpg",
+              "./images/stade_pierre_mauroy/spm_3.jpg",
+              "./images/stade_pierre_mauroy/spm_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 50.6108,
+                      "lng": 3.1361
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Basketball", "Football", "Rugby"]
+              }
+          ],
+          "disciplines": [
+              {
+                  "name": "Basketball",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Hommes quart de finale (2 matchs)",
+                                      "Femmes quart de finale (2 matchs)"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Arena Paris Nord",
+          "description": "L'Arena Paris Nord est une salle omnisports située à La Plaine-Saint-Denis, dans la Seine-Saint-Denis, en France. Elle est située sur la commune de La Plaine-Saint-Denis, dans le département de Seine-Saint-Denis, au nord de Paris.",
+          "location": {
+              "lat": 48.9167,
+              "lng": 2.3833
+          },
+          "images": [
+              "./images/arena_paris_nord/apn_1.jpg",
+              "./images/arena_paris_nord/apn_2.jpg",
+              "./images/arena_paris_nord/apn_3.jpg",
+              "./images/arena_paris_nord/apn_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.9167,
+                      "lng": 2.3833
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Basketball", "Handball"]
+              }
+          ],
+          "disciplines": [
+              { 
+                  "name": "Boxe",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "54kg - Femme, 1/32 finale combat 1",
+                                      "57kg - Femme, 1/32 finale combat 1",
+                                      "60kg - Homme, 1/32 finale combat 1",
+                                      "63kg - Homme, 1/32 finale combat 1",
+                                      "69kg - Homme, 1/32 finale combat 1",
+                                      "75kg - Homme, 1/32 finale combat 1",
+                                      "81kg - Homme, 1/32 finale combat 1"     
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "54kg - Femme, 1/16 finale combat 1",
+                                      "57kg - Femme, 1/16 finale combat 1",
+                                      "60kg - Homme, 1/16 finale combat 1",
+                                      "63kg - Homme, 1/16 finale combat 1",
+                                      "69kg - Homme, 1/16 finale combat 1",
+                                      "75kg - Homme, 1/16 finale combat 1",
+                                      "81kg - Homme, 1/16 finale combat 1"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Stade Rolland Garros - P.Chatrier",
+          "description": "Le stade Roland-Garros est un complexe tennistique parisien situé dans le bois de Boulogne, dans le 16e arrondissement de Paris. Il est situé sur la commune de Paris, dans le département de Paris, à l'ouest de Paris.",
+          "location": {
+              "lat": 48.8467,
+              "lng": 2.2489
+          },
+          "images": [
+              "./images/stade_rolland_garros/srg_1.jpg",
+              "./images/stade_rolland_garros/srg_2.jpg",
+              "./images/stade_rolland_garros/srg_3.jpg",
+              "./images/stade_rolland_garros/srg_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.8467,
+                      "lng": 2.2489
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                  "disciplines": ["Tennis"]
+              }
+          ],
+          "disciplines": [
+              { 
+                  "name": "Tennis",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Simple femmes 1er tour",
+                                      "Simple hommes 1er tour",
+                                      "Double femmes 1er tour",
+                                      "Double hommes 1er tour",
+                                      "Double mixte 1er tour"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Simple femmes 2e tour",
+                                      "Simple hommes 2e tour",
+                                      "Double femmes 2e tour",
+                                      "Double hommes 2e tour",
+                                      "Double mixte 2e tour"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Vélodrome National de Saint-Quentin-en-Yvelines",
+          "description": "Le vélodrome national de Saint-Quentin-en-Yvelines est un vélodrome situé à Montigny-le-Bretonneux, dans les Yvelines, en France. Il est situé sur la commune de Montigny-le-Bretonneux, dans le département de Yvelines, à l'ouest de Paris.",
+          "location": {
+              "lat": 48.77,
+              "lng": 1.99
+          },
+          "images": [
+              "./images/velodrome_national/vn_1.jpg",
+              "./images/velodrome_national/vn_2.jpg",
+              "./images/velodrome_national/vn_3.jpg",
+              "./images/velodrome_national/vn_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.77,
+                      "lng": 1.99
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Cyclisme sur piste"]
+              }
+          ],
+          "disciplines": [
+              { 
+                  "name": "Cyclisme sur piste",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Vitesse par équipe hommes 1er tour",
+                                      "Vitesse par équipe femmes 1er tour",
+                                      "Vitesse individuelle hommes 1er tour",
+                                      "Vitesse individuelle femmes 1er tour",
+                                      "Keirin hommes 1er tour",
+                                      "Keirin femmes 1er tour",
+                                      "Omnium hommes scratch",
+                                      "Omnium femmes scratch"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Vitesse par équipe hommes 1/4 finale",
+                                      "Vitesse par équipe femmes 1/4 finale",
+                                      "Vitesse individuelle hommes 1/4 finale",
+                                      "Vitesse individuelle femmes 1/4 finale",
+                                      "Keirin hommes repêchage",
+                                      "Keirin femmes repêchage",
+                                      "Omnium hommes poursuite individuelle",
+                                      "Omnium femmes poursuite individuelle"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+  
+        },
+        {
+          "name": "Grand Palais",
+          "description": "Le Grand Palais est un monument parisien situé en France. Il est situé sur la commune de Paris, dans le département de Paris, au nord de Paris.",
+          "location": {
+              "lat": 48.8667,
+              "lng": 2.3167
+          },
+          "images": [
+              "./images/grand_palais/gp_1.jpg",
+              "./images/grand_palais/gp_2.jpg",
+              "./images/grand_palais/gp_3.jpg",
+              "./images/grand_palais/gp_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.8667,
+                      "lng": 2.3167
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Escalade"]
+              }
+          ],
+          "disciplines": [
+              { 
+                  "name": "Escalade",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Bloc femmes qualification",
+                                      "Bloc hommes qualification",
+                                      "Difficulté femmes qualification",
+                                      "Difficulté hommes qualification",
+                                      "Vitesse femmes qualification",
+                                      "Vitesse hommes qualification"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Bloc femmes finale",
+                                      "Bloc hommes finale",
+                                      "Difficulté femmes finale",
+                                      "Difficulté hommes finale",
+                                      "Vitesse femmes finale",
+                                      "Vitesse hommes finale"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Site d'escalade du Bourget",
+          "description": "Le site d'escalade du Bourget est un site d'escalade situé à Le Bourget, en France. Il est situé sur la commune de Le Bourget, dans le département de Seine-Saint-Denis, au nord de Paris.",
+          "location": {
+              "lat": 48.9333,
+              "lng": 2.4333
+          },
+          "images": [
+              "./images/site_escalade_bourget/seb_1.jpg",
+              "./images/site_escalade_bourget/seb_2.jpg",
+              "./images/site_escalade_bourget/seb_3.jpg",
+              "./images/site_escalade_bourget/seb_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.9333,
+                      "lng": 2.4333
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Escalade"]
+              }
+          ],
+          "disciplines": [
+              { 
+                  "name": "Escalade",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Bloc femmes qualification",
+                                      "Bloc hommes qualification",
+                                      "Difficulté femmes qualification",
+                                      "Difficulté hommes qualification",
+                                      "Vitesse femmes qualification",
+                                      "Vitesse hommes qualification"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Bloc femmes finale",
+                                      "Bloc hommes finale",
+                                      "Difficulté femmes finale",
+                                      "Difficulté hommes finale",
+                                      "Vitesse femmes finale",
+                                      "Vitesse hommes finale"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+  
+        },
+        {
+          "name": "Parc des Princes",
+          "description": "Le Parc des Princes est un stade multifonction situé à Paris, en France. Il est situé sur la commune de Paris, dans le département de Paris, au sud-ouest de Paris.",
+          "location": {
+              "lat": 48.8417,
+              "lng": 2.2531
+          },
+          "images": [
+              "./images/parc_des_princes/pdp_1.jpg",
+              "./images/parc_des_princes/pdp_2.jpg",
+              "./images/parc_des_princes/pdp_3.jpg",
+              "./images/parc_des_princes/pdp_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.8417,
+                      "lng": 2.2531
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Football"]
+              }
+          ],
+          "disciplines": [
+              { 
+                  "name": "Football",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Hommes quart de finale (2 matchs)",
+                                      "Femmes quart de finale (2 matchs)"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Stade de la Beaujoire",
+          "description": "Le stade de la Beaujoire est un stade multifonction situé à Nantes, en France. Il est situé sur la commune de Nantes, dans le département de Loire-Atlantique, au sud-ouest de Nantes.",
+          "location": {
+              "lat": 47.2583,
+              "lng": -1.52
+          },
+          "images": [
+              "./images/stade_de_la_beaujoire/sdlb_1.jpg",
+              "./images/stade_de_la_beaujoire/sdlb_2.jpg",
+              "./images/stade_de_la_beaujoire/sdlb_3.jpg",
+              "./images/stade_de_la_beaujoire/sdlb_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 47.2583,
+                      "lng": -1.52
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Football"]
+              }
+          ],
+          "disciplines": [
+              { 
+                  "name": "Football",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Hommes quart de finale (2 matchs)",
+                                      "Femmes quart de finale (2 matchs)"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Stade de Lyon",
+          "description": "Le stade de Lyon est un stade multifonction situé à Lyon, en France. Il est situé sur la commune de Lyon, dans le département de Rhône, au sud-est de Lyon.",
+          "location": {
+              "lat": 45.7653,
+              "lng": 4.9611
+          },
+          "images": [
+              "./images/stade_de_lyon/sdl_1.jpg",
+              "./images/stade_de_lyon/sdl_2.jpg",
+              "./images/stade_de_lyon/sdl_3.jpg",
+              "./images/stade_de_lyon/sdl_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 45.7653,
+                      "lng": 4.9611
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Football"]
+              }
+          ],
+          "disciplines": [
+              { 
+                  "name": "Football",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": [
+                              {
+                                  "startTime": "11:00",
+                                  "endTime": "22:45",
+                                  "activities": [
+                                      "Hommes quart de finale (2 matchs)",
+                                      "Femmes quart de finale (2 matchs)"
+                                  ]
+                              }
+                          ]
+                          
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Golf National",
+          "description": "Le Golf National est un parcours de golf situé à Guyancourt, dans les Yvelines, en France. Il est situé sur la commune de Guyancourt, dans le département de Yvelines, à l'ouest de Paris.",
+          "location": {
+              "lat": 48.7083,
+              "lng": 2.0333
+          },
+          "images": [
+              "./images/golf_national/gn_1.jpg",
+              "./images/golf_national/gn_2.jpg",
+              "./images/golf_national/gn_3.jpg",
+              "./images/golf_national/gn_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.7083,
+                      "lng": 2.0333
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Golf"]
+              }
+          ],
+          "disciplines": [
+              {
+                  "name": "Golf",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "07:30",
+                                  "endTime": "11:05",
+                                  "activities": [
+                                      "20 km marche - hommes finale",
+                                      "20 km marche - femmes finale"
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Arena Paris Sud 6",
+          "description": "L'Arena Paris Sud 6 est une salle omnisports située à Paris, en France. Elle est située sur la commune de Paris, dans le département de Paris, au sud de Paris.",
+          "location": {
+              "lat": 48.7083,
+              "lng": 2.0333
+          },
+          "images": [
+              "./images/arena_paris_sud_6/aps6_1.jpg",
+              "./images/arena_paris_sud_6/aps6_2.jpg",
+              "./images/arena_paris_sud_6/aps6_3.jpg",
+              "./images/arena_paris_sud_6/aps6_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.7083,
+                      "lng": 2.0333
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Handball"]
+              }
+          ],
+          "disciplines": [
+              {
+                  "name": "Handball",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "09:00",
+                                  "endTime": "12:00",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": []
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Arena Champ-de-Mars",
+          "description": "L'Arena Champ-de-Mars est une salle omnisports située à Paris, en France. Elle est située sur la commune de Paris, dans le département de Paris, au sud de Paris.",
+          "location": {
+              "lat": 48.7083,
+              "lng": 2.0333
+          },
+          "images": [
+              "./images/arena_champ_de_mars/acdm_1.jpg",
+              "./images/arena_champ_de_mars/acdm_2.jpg",
+              "./images/arena_champ_de_mars/acdm_3.jpg",
+              "./images/arena_champ_de_mars/acdm_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.7083,
+                      "lng": 2.0333
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Handball"]
+              }
+          ],
+          "disciplines": [
+              {
+                  "name": "JUDO",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "09:00",
+                                  "endTime": "12:00",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": []
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Paris La Défense Arena",
+          "description": "La Paris La Défense Arena est une salle omnisports située à Nanterre, en France. Elle est située sur la commune de Nanterre, dans le département de Hauts-de-Seine, à l'ouest de Paris.",
+          "location": {
+              "lat": 48.7083,
+              "lng": 2.0333
+          },
+          "images": [
+              "./images/paris_la_defense_arena/plda_1.jpg",
+              "./images/paris_la_defense_arena/plda_2.jpg",
+              "./images/paris_la_defense_arena/plda_3.jpg",
+              "./images/paris_la_defense_arena/plda_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.7083,
+                      "lng": 2.0333
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Natation"]
+              }
+          ],
+          "disciplines": [
+              {
+                  "name": "Natation",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "09:00",
+                                  "endTime": "12:00",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": []
+                      }
+                  ]
+              }
+          ]
+        },
+        {
+          "name": "Invalides",
+          "description": "L'Hôtel national des Invalides, appelé couramment les Invalides, est un monument parisien situé dans le 7e arrondissement. Il est situé sur la commune de Paris, dans le département de Paris, au sud-ouest de Paris.",
+          "location": {
+              "lat": 48.7083,
+              "lng": 2.0333
+          },
+          "images": [
+              "./images/invalides/inv_1.jpg",
+              "./images/invalides/inv_2.jpg",
+              "./images/invalides/inv_3.jpg",
+              "./images/invalides/inv_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.7083,
+                      "lng": 2.0333
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Natation"]
+              }
+          ],
+          "disciplines": [
+              {
+                  "name": "Tir à l'arc",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "09:00",
+                                  "endTime": "12:00",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": []
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "name": "Pont Alexandre III",
+          "description": "Le pont Alexandre-III est un pont parisien situé dans le 8e arrondissement. Il est situé sur la commune de Paris, dans le département de Paris, au nord de Paris.",
+          "location": {
+              "lat": 48.7083,
+              "lng": 2.0333
+          },
+          "images": [
+              "./images/pont_alexandre_iii/paiii_1.jpg",
+              "./images/pont_alexandre_iii/paiii_2.jpg",
+              "./images/pont_alexandre_iii/paiii_3.jpg",
+              "./images/pont_alexandre_iii/paiii_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.7083,
+                      "lng": 2.0333
+                  },
+                  "images": [
+                      "image_url_1",
+                      "image_url_2"
+                  ],
+                    "disciplines": ["Triathlon"]
+              }
+          ],
+          "disciplines": [
+              {
+                  "name": "Triathlon",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "09:00",
+                                  "endTime": "12:00",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)",
+                                      "Hommes tour préliminaire",
+                                      "Hommes tour préliminaire"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": []
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "name": "Stade Tour Eiffel",
+          "description": "Le stade Tour Eiffel est un stade multifonction situé à Paris, en France. Il est situé sur la commune de Paris, dans le département de Paris, au sud-ouest de Paris.",
+          "location": {
+              "lat": 48.7083,
+              "lng": 2.0333
+          },
+          "images": [
+              "./images/stade_tour_eiffel/ste_1.jpg",
+              "./images/stade_tour_eiffel/ste_2.jpg",
+              "./images/stade_tour_eiffel/ste_3.jpg",
+              "./images/stade_tour_eiffel/ste_4.jpg"
+          ],
+          "spots": [
+              {
+                  "name": "Spot 1",
+                  "description": "Description du spot 1",
+                  "location": {
+                      "lat": 48.7083,
+                      "lng": 2.0333
+                  },
+                  "images": [
+                      "./images/stade_tour_eiffel/ste_1.jpg",
+                      "./images/stade_tour_eiffel/ste_2.jpg",
+                      "./images/stade_tour_eiffel/ste_3.jpg",
+                      "./images/stade_tour_eiffel/ste_4.jpg"
+                  ],
+                    "disciplines": ["Beach Volley Ball"]
+              }
+          ],
+          "disciplines": [
+              {
+                  "name": "Beach Volley Ball",
+                  "events": [
+                      {
+                          "date": "2024-07-27",
+                          "sessions": [
+                              {
+                                  "startTime": "09:00",
+                                  "endTime": "12:00",
+                                  "activities": [
+                                      "Hommes tour préliminaire (2 matchs)"
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "date": "2024-07-28",
+                          "sessions": []
+                      }
+                  ]
+              }
+          ]
+      }
+    ]
+  }
