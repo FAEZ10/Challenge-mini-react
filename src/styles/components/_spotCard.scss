@@ -1,0 +1,97 @@
+.spot-card {
+  display: flex;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer; 
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .spot-image {
+    width: 35%; 
+    height: auto; 
+    object-fit: cover;
+  }
+
+  .spot-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background: #fff;
+  }
+
+  .spot-name,
+  .spot-description,
+  .spot-disciplines {
+    margin: 5px 0; 
+  }
+
+  .spot-distance {
+    font-size: 0.9rem; 
+    font-weight: bold; 
+    color: #3498db; 
+    margin-top: 5px; 
+    display: flex; 
+    align-items: center; 
+  
+    &:before {
+      content: ''; 
+      background-image: url('./images/components/distance1.svg'); 
+      background-size: cover; 
+      width: 25px; 
+      height: 25px; 
+      margin-right: 5px; 
+    }
+  }
+  
+
+  .spot-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .spot-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .discipline-name {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .date-badge {
+    background-color: #e1e1e1;
+    color: #333;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    font-size: 0.8rem;
+    display: inline-block; 
+  }
+  
+  .spot-discipline {
+    margin-bottom: 10px;
+    list-style-type: none; 
+  }
+  
+ 
+  .spot-disciplines {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+  }
+  
+  .spot-disciplines::-webkit-scrollbar {
+    display: none; 
+  }
+}

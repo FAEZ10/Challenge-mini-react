@@ -95,6 +95,9 @@ const consumeMessage = wipTree => {
         childrenReconcile(wipTree, newChildElements);
 
         instance.componentDidUpdate(prevProps, prevState);
+        if (wipTree.alternate && wipTree.alternate.callback) {
+          wipTree.alternate.callback(); 
+        }
       } else {
         childrenClone(wipTree);
       }
