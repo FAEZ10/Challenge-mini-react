@@ -20,7 +20,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
     "@rollup/plugin-json": "latest",
