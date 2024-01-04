@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "start": "rollup -c -w",
+    "start": "node server.js",
     "build": "rollup -c",
     "tests": "jest",
     "lint": "npx eslint core/**/**.js src/**/**.js"
@@ -23,12 +23,13 @@
   "dependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
+    "@rollup/plugin-alias": "latest",
+    "@rollup/plugin-babel": "latest",
     "@rollup/plugin-json": "latest",
     "@rollup/plugin-node-resolve": "latest",
-    "@rollup/plugin-babel": "latest",
-    "@rollup/plugin-alias": "latest",
     "eslint": "latest",
     "eslint-plugin-react": "latest",
+    "express": "^4.18.2",
     "jest": "latest",
     "rollup": "latest",
     "rollup-plugin-livereload": "latest",
