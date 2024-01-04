@@ -46,7 +46,7 @@ const plugins = [
 export default {
   input: 'src/index.js',
   output: {
-    dir: resolvePath(__dirname, 'public/build'),
+    file: resolvePath(__dirname, 'public/build/bundle.min.js'),
     format: 'iife', 
     sourcemap: isDev ? 'inline' : false,
   },
