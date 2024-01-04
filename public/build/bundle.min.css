@@ -1,27 +1,53 @@
-.navbar {
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+  color: white;
+  background-color: rgba(73, 79, 110, 0.5);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: #2d2f33;
-  padding: 10px 20px;
-}
-.navbar .navbar-logo {
-  height: 50px;
-}
-.navbar .nav-links {
-  display: flex;
-  align-content: center;
-  justify-content: center;
   align-items: center;
 }
-.navbar .nav-links .nav-link {
-  margin-left: 20px;
+.navbar a {
+  color: inherit;
   text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
 }
-.navbar .nav-links .nav-link:hover {
-  color: #4caf50;
+.navbar a:hover {
+  text-decoration: none;
+}
+.navbar #logo-link {
+  line-height: 0;
+}
+.navbar img {
+  width: 40px;
+  height: auto;
+  fill: white;
+  transition: all 0.5s;
+}
+.navbar #menu-button {
+  display: none;
+}
+.navbar img {
+  fill: white;
+}
+.navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.navbar nav ul li a {
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 main {
@@ -268,36 +294,111 @@ footer ul li a {
 #section1 .container div.countdown .countdown__secondes p {
   margin-top: -1rem;
   font-size: 0.5rem;
-}.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #2d2f33;
-  padding: 10px 20px;
 }
-.navbar .navbar-logo {
-  height: 50px;
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
-.navbar .nav-links {
+
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
 }
-.navbar .nav-links .nav-link {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #ffffff;
+
+html {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
 }
-.navbar .nav-links .nav-link:hover {
-  color: #4caf50;
-}.olympic-event-dashboard {
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+}
+
+a {
+  color: #0055a4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  gap: 20px;
+}
+
+.not-found h1 {
+  font-size: 10rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.not-found p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.not-found a {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.not-found a:hover {
+  background-color: #2980b9;
+}.explorer-events {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
-.olympic-event-dashboard .modal-backdrop {
+.explorer-events .modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -310,7 +411,7 @@ footer ul li a {
   align-items: center;
   z-index: 9999;
 }
-.olympic-event-dashboard .no-results-message {
+.explorer-events .no-results-message {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,17 +426,17 @@ footer ul li a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.olympic-event-dashboard .no-results-message:hover {
+.explorer-events .no-results-message:hover {
   background-color: #eaeaea;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-.olympic-event-dashboard .loader {
+.explorer-events .loader {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.olympic-event-dashboard .spinner {
+.explorer-events .spinner {
   border: 5px solid #f3f3f3;
   border-top: 5px solid #3498db;
   border-radius: 50%;
@@ -351,31 +452,32 @@ footer ul li a {
     transform: rotate(360deg);
   }
 }
-.olympic-event-dashboard .filters-and-spots {
+.explorer-events .filters-and-spots {
   flex-basis: 40%;
   display: flex;
-  padding: 20px;
+  padding: 10px;
   flex-direction: column;
   height: 100vh;
 }
-.olympic-event-dashboard .filters-and-spots .filters {
+.explorer-events .filters-and-spots .filters {
   background: white;
   position: sticky;
   margin-bottom: 15px;
+  margin-right: 10px;
   top: 0;
   z-index: 10;
 }
-.olympic-event-dashboard .filters-and-spots .filters .search-bar-container {
+.explorer-events .filters-and-spots .filters .search-bar-container {
   margin-bottom: 10px;
 }
-.olympic-event-dashboard .filters-and-spots .filters .other-filters {
+.explorer-events .filters-and-spots .filters .other-filters {
   display: flex;
   justify-content: space-between;
 }
-.olympic-event-dashboard .filters-and-spots .filters .other-filters > div {
+.explorer-events .filters-and-spots .filters .other-filters > div {
   flex-basis: calc(50% - 5px);
 }
-.olympic-event-dashboard .filters-and-spots .proximity-message {
+.explorer-events .filters-and-spots .proximity-message {
   font-size: 1rem;
   color: #666;
   padding: 10px 20px;
@@ -385,24 +487,24 @@ footer ul li a {
   margin: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.olympic-event-dashboard .filters-and-spots .spots-list {
+.explorer-events .filters-and-spots .spots-list {
   flex-grow: 1;
   overflow-y: auto;
   scrollbar-width: thin;
   -ms-overflow-style: auto;
 }
-.olympic-event-dashboard .filters-and-spots .spots-list::-webkit-scrollbar {
+.explorer-events .filters-and-spots .spots-list::-webkit-scrollbar {
   width: 10px;
 }
-.olympic-event-dashboard .filters-and-spots .spots-list::-webkit-scrollbar-thumb {
+.explorer-events .filters-and-spots .spots-list::-webkit-scrollbar-thumb {
   background-color: silver;
   border-radius: 10px;
 }
-.olympic-event-dashboard .map-container {
+.explorer-events .map-container {
   flex-grow: 1;
   overflow: hidden;
 }
-.olympic-event-dashboard .map-container #mapId {
+.explorer-events .map-container #mapId {
   width: 100%;
   height: 100%;
 }.loader {
@@ -418,87 +520,68 @@ footer ul li a {
   width: 50px;
   height: 50px;
   animation: spin 2s linear infinite;
-}.spot-card {
+}header {
+  position: fixed;
+  width: 100%;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+  color: white;
+  background-color: rgba(73, 79, 110, 0.5);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .container {
   display: flex;
-  border: 1px solid #e1e1e1;
-  margin-bottom: 15px;
-  border-radius: 20px;
-  overflow: hidden;
-  gap: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-}
-.spot-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.spot-card .spot-image {
-  width: 35%;
-  height: auto;
-  object-fit: cover;
-}
-.spot-card .spot-info {
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #fff;
-}
-.spot-card .spot-name,
-.spot-card .spot-description,
-.spot-card .spot-disciplines {
-  margin: 5px 0;
-}
-.spot-card .spot-distance {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #3498db;
-  margin-top: 5px;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.spot-card .spot-distance:before {
-  content: "";
-  background-image: url("./images/components/distance1.svg");
-  background-size: cover;
-  width: 25px;
-  height: 25px;
-  margin-right: 5px;
+.navbar a {
+  color: inherit;
+  text-decoration: none;
 }
-.spot-card .spot-name {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #333;
+.navbar a:hover {
+  text-decoration: none;
 }
-.spot-card .spot-description {
-  font-size: 0.9rem;
-  color: #666;
+.navbar #logo-link {
+  line-height: 0;
 }
-.spot-card .discipline-name {
-  font-weight: bold;
-  display: block;
+.navbar img {
+  width: 40px;
+  height: auto;
+  fill: white;
+  transition: all 0.5s;
 }
-.spot-card .date-badge {
-  background-color: #e1e1e1;
-  color: #333;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 2px;
-  font-size: 0.8rem;
-  display: inline-block;
-}
-.spot-card .spot-discipline {
-  margin-bottom: 10px;
-  list-style-type: none;
-}
-.spot-card .spot-disciplines {
-  overflow-y: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.spot-card .spot-disciplines::-webkit-scrollbar {
+.navbar #menu-button {
   display: none;
+}
+.navbar img {
+  fill: white;
+}
+.navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.navbar nav ul li a {
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+}.select-filter {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: url("./images/components/dropdown.svg") no-repeat right 10px center/15px 15px;
 }.spot-detail {
   position: fixed;
   top: 50%;
@@ -512,6 +595,15 @@ footer ul li a {
   max-height: 80vh;
   overflow-y: auto;
   z-index: 1000;
+  scrollbar-width: thin;
+  -ms-overflow-style: auto;
+}
+.spot-detail::-webkit-scrollbar {
+  width: 10px;
+}
+.spot-detail::-webkit-scrollbar-thumb {
+  background-color: silver;
+  border-radius: 10px;
 }
 @media (max-width: 600px) {
   .spot-detail {
@@ -548,8 +640,8 @@ footer ul li a {
   content: "";
   background-image: url("./images/components/distance1.svg");
   background-size: cover;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   margin-right: 5px;
 }
 .spot-detail .distance-and-directions .directions-button {
@@ -630,6 +722,46 @@ footer ul li a {
   padding: 0.25rem 0.5rem;
   font-size: 0.85rem;
   margin-top: 0.25rem;
+}.search-bar {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.search-bar .search-input {
+  width: 100%;
+  padding: 10px 40px 10px 40px;
+  border: 1px solid rgba(204, 204, 204, 0.9843137255);
+  border-radius: 20px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: white url("./images/components/search.svg") no-repeat 10px center/20px 20px;
+}
+.search-bar .search-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
+}
+.search-bar .search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}.date-picker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: url("./images/components/calendar.svg") no-repeat right 10px center/15px 15px;
+  margin-right: 0;
 }.info-window-content .info-window-title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
@@ -697,56 +829,88 @@ footer ul li a {
 }
 .info-window-content .info-window-body .info-window-button:hover {
   background-color: #217dbb;
-}.proximity-filter {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: calc(50% - 10px);
-  padding: 10px;
+}.spot-card {
+  display: flex;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  border-radius: 20px;
   margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background: url("./images/components/dropdown.svg") no-repeat right 10px center/15px 15px;
-}.date-picker {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: calc(50% - 10px);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background: url("./images/components/calendar.svg") no-repeat right 10px center/15px 15px;
-  margin-right: 0;
-}.search-bar {
-  display: block;
-  width: 100%;
-  margin-bottom: 20px;
-  position: relative;
-}
-.search-bar .search-input {
-  width: 100%;
-  padding: 10px 40px 10px 40px;
-  border: 1px solid rgba(204, 204, 204, 0.9843137255);
-  border-radius: 20px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background: white url("./images/components/search.svg") no-repeat 10px center/20px 20px;
-}
-.search-bar .search-input:focus {
-  outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
-}
-.search-bar .search-button {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  background: transparent;
+  margin-left: 10px;
+  overflow: hidden;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
+}
+.spot-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.spot-card .spot-image {
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.spot-card .spot-info {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+.spot-card .spot-name,
+.spot-card .spot-description,
+.spot-card .spot-disciplines {
+  margin: 5px 0;
+}
+.spot-card .spot-distance {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.spot-card .spot-distance:before {
+  content: "";
+  background-image: url("./images/components/distance1.svg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+.spot-card .spot-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+.spot-card .spot-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+.spot-card .discipline-name {
+  font-weight: bold;
+  display: block;
+}
+.spot-card .date-badge {
+  background-color: #e1e1e1;
+  color: #333;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 2px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.spot-card .spot-discipline {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.spot-card .spot-disciplines {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.spot-card .spot-disciplines::-webkit-scrollbar {
+  display: none;
 }
