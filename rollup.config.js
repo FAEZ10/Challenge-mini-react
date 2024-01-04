@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const sassOptions = {
-  output: true
+  output: resolvePath(__dirname, 'public/build/bundle.min.css')
 };
 
 const aliasOptions = {
@@ -36,18 +36,24 @@ const plugins = [
   alias(aliasOptions),
   isDev && serve({
     open: true,
-    contentBase: ['./public', './build'],
+    contentBase: 'public',
     historyApiFallback: true,
     port: 3008,
   }),
-  isDev && livereload('./src'),
+  isDev && livereload('public'),
 ].filter(Boolean);
 
 export default {
   input: 'src/index.js',
   output: {
-    file: resolvePath(__dirname, 'build/bundle.min.js'),
-    format: 'cjs'
+    dir: resolvePath(__dirname, 'public/build'),
+    format: 'iife', 
+    sourcemap: isDev ? 'inline' : false,
   },
-  plugins
+  plugins,
+  watch: {
+    clearScreen: false,
+    include: 'src/**',
+  }
 };
+
