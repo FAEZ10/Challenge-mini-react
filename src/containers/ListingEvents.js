@@ -96,10 +96,10 @@ class ListingEvents extends Component {
         const { filteredLocations, loading, userLocation } = this.state;
 
         const carouselImages = [
-            "./images/stade_de_france/stf_1.jpg",
-            "./images/stade_de_france/stf_2.jpg",
-            "./images/stade_de_france/stf_3.jpg",
-            "./images/stade_de_france/stf_4.jpg"
+            "./images/sports/img1.jpg",
+            "./images/sports/img2.jpg",
+            "./images/sports/img3.jpg",
+            "./images/sports/img5.jpg"
         ];
 
         const disciplineOptions = this.state.locations

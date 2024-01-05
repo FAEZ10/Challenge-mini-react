@@ -58,7 +58,7 @@ class Navbar extends Component {
                               CreateElement({
                                 componentClass: Link,
                                 props: {
-                                  to: '/about',
+                                  to: '/evenements',
                                   className: 'nav-link',
                                   textContent: 'Événements'
                                 }
@@ -71,7 +71,7 @@ class Navbar extends Component {
                               CreateElement({
                                 componentClass: Link,
                                 props: {
-                                  to: '/contact',
+                                  to: '/carte',
                                   className: 'nav-link',
                                   textContent: 'Carte'
                                 }
@@ -83,20 +83,6 @@ class Navbar extends Component {
                     ]
 
                   }),
-                  CreateElement({
-                    tagName:'button',
-                    props:{
-                      id:'menu-button'
-                    },
-                    children:[
-                      CreateElement({
-                                    tagName: 'img',
-                                    props: { src: '/navbar_icon.svg' }
-                                 }),
-                    ]
-
-
-                  })
                 ]
             })
       ]

@@ -507,19 +507,187 @@ a:hover {
 .explorer-events .map-container #mapId {
   width: 100%;
   height: 100%;
-}.loader {
+}.listing-evenements {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
 }
-.loader .spinner {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #3498db;
+.listing-evenements .filters-and-list-container {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.listing-evenements .filters-container {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.listing-evenements .search-bar-container {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.listing-evenements .other-filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.listing-evenements .events-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: auto;
+}
+.listing-evenements .events-container::-webkit-scrollbar {
+  width: 10px;
+}
+.listing-evenements .events-container::-webkit-scrollbar-thumb {
+  background-color: silver;
+  border-radius: 10px;
+}
+.listing-evenements .carousel-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100vh;
+  background-color: #000;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  overflow: hidden;
+}
+.listing-evenements .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.listing-evenements .carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.listing-evenements .carousel-control {
+  position: absolute;
+  top: 50%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 1010;
+  transform: translateY(-50%);
+}
+.listing-evenements .carousel-control.prev {
+  left: 10px;
+}
+.listing-evenements .carousel-control.next {
+  right: 10px;
+}
+.listing-evenements .carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.listing-evenements .carousel-image.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.listing-evenements .events-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.listing-evenements .event-item {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  background: #f9f9f9;
+}
+.listing-evenements .event-item:hover {
+  background: #e9e9e9;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.listing-evenements .event-title {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.listing-evenements .event-date {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.listing-evenements .session-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.listing-evenements .session-time-location {
+  display: flex;
+  flex-direction: column;
+}
+.listing-evenements .session-time {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 5px;
+}
+.listing-evenements .location-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.listing-evenements .location-icon {
+  width: 40px;
+  height: auto;
+}
+.listing-evenements .location-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.listing-evenements .activities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+.listing-evenements .activity-info {
+  text-align: center;
+  padding: 5px;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.listing-evenements .activity-info:hover {
+  background-color: #d4d4d4;
 }header {
   position: fixed;
   width: 100%;
@@ -570,6 +738,131 @@ a:hover {
   display: block;
   text-decoration: none;
   font-size: 1em;
+}.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.loader .spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}.search-bar {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.search-bar .search-input {
+  width: 100%;
+  padding: 10px 40px 10px 40px;
+  border: 1px solid rgba(204, 204, 204, 0.9843137255);
+  border-radius: 20px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: white url("./images/components/search.svg") no-repeat 10px center/20px 20px;
+}
+.search-bar .search-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
+}
+.search-bar .search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}.spot-card {
+  display: flex;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.spot-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.spot-card .spot-image {
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.spot-card .spot-info {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+.spot-card .spot-name,
+.spot-card .spot-description,
+.spot-card .spot-disciplines {
+  margin: 5px 0;
+}
+.spot-card .spot-distance {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.spot-card .spot-distance:before {
+  content: "";
+  background-image: url("./images/components/distance1.svg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+.spot-card .spot-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+.spot-card .spot-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+.spot-card .discipline-name {
+  font-weight: bold;
+  display: block;
+}
+.spot-card .date-badge {
+  background-color: #e1e1e1;
+  color: #333;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 2px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.spot-card .spot-discipline {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.spot-card .spot-disciplines {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.spot-card .spot-disciplines::-webkit-scrollbar {
+  display: none;
 }.select-filter {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -722,46 +1015,6 @@ a:hover {
   padding: 0.25rem 0.5rem;
   font-size: 0.85rem;
   margin-top: 0.25rem;
-}.search-bar {
-  display: block;
-  width: 100%;
-  margin-bottom: 20px;
-  position: relative;
-}
-.search-bar .search-input {
-  width: 100%;
-  padding: 10px 40px 10px 40px;
-  border: 1px solid rgba(204, 204, 204, 0.9843137255);
-  border-radius: 20px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background: white url("./images/components/search.svg") no-repeat 10px center/20px 20px;
-}
-.search-bar .search-input:focus {
-  outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
-}
-.search-bar .search-button {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}.date-picker {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: calc(50% - 10px);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background: url("./images/components/calendar.svg") no-repeat right 10px center/15px 15px;
-  margin-right: 0;
 }.info-window-content .info-window-title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
@@ -829,88 +1082,16 @@ a:hover {
 }
 .info-window-content .info-window-body .info-window-button:hover {
   background-color: #217dbb;
-}.spot-card {
-  display: flex;
-  border: 1px solid #e1e1e1;
-  margin-bottom: 15px;
+}.date-picker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
-  overflow: hidden;
-  gap: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-}
-.spot-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.spot-card .spot-image {
-  width: 35%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.spot-card .spot-info {
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #fff;
-}
-.spot-card .spot-name,
-.spot-card .spot-description,
-.spot-card .spot-disciplines {
-  margin: 5px 0;
-}
-.spot-card .spot-distance {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #3498db;
-  margin-top: 5px;
-  display: flex;
-  align-items: center;
-}
-.spot-card .spot-distance:before {
-  content: "";
-  background-image: url("./images/components/distance1.svg");
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-}
-.spot-card .spot-name {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #333;
-}
-.spot-card .spot-description {
-  font-size: 0.9rem;
-  color: #666;
-}
-.spot-card .discipline-name {
-  font-weight: bold;
-  display: block;
-}
-.spot-card .date-badge {
-  background-color: #e1e1e1;
-  color: #333;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 2px;
-  font-size: 0.8rem;
-  display: inline-block;
-}
-.spot-card .spot-discipline {
-  margin-bottom: 10px;
-  list-style-type: none;
-}
-.spot-card .spot-disciplines {
-  overflow-y: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.spot-card .spot-disciplines::-webkit-scrollbar {
-  display: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: url("./images/components/calendar.svg") no-repeat right 10px center/15px 15px;
+  margin-right: 0;
 }
