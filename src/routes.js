@@ -7,6 +7,7 @@ import ExplorerEvent from './containers/ExplorerEvent.js';
 const routes = [
   new Route("/", Home),
   new Route("/about", About),
+  new Route("/not-found", NotFound),
 
 ];
 
